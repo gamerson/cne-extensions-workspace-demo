@@ -26,5 +26,5 @@ jobs:
           aws s3 cp \
             --recursive \
             --region ${{ secrets.AWS_REGION }} \
-            bundles/osgi/* \
+            bundles/osgi/ \
             s3://${{ secrets.AWS_S3_BUCKET_NAME }}/extensions_build_${{ github.run_number }}/osgi/
