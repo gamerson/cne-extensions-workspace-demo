@@ -4,7 +4,7 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Activate;
 
 /**
- * @author greg
+ * @author Greg
  */
 @Component(immediate = true)
 public class HelloOsgiWorld {
