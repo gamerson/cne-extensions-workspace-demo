@@ -26,10 +26,10 @@ jobs:
           aws s3 cp \
             --region ${{ secrets.AWS_REGION }} \
             bundles/osgi/client-extensions/* \
-            s3://${{ secrets.S3_BUCKET_NAME }}/build_${{ github.run_number }}/osgi/client-extensions
+            s3://${{ secrets.AWS_S3_BUCKET_NAME }}/build_${{ github.run_number }}/osgi/client-extensions
       - name: Upload to osgi modules to S3 bucket
         run: |
           aws s3 cp \
             --region ${{ secrets.AWS_REGION }} \
             bundles/osgi/modules/* \
-            s3://${{ secrets.S3_BUCKET_NAME }}/build_${{ github.run_number }}/osgi/modules
+            s3://${{ secrets.AWS_S3_BUCKET_NAME }}/build_${{ github.run_number }}/osgi/modules
